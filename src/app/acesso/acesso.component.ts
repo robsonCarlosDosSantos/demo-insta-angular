@@ -38,12 +38,24 @@ import { trigger, animate, state, transition, style } from '@angular/animations'
 })
 export class AcessoComponent implements OnInit {
 
-  public animacaoBanner: string = 'criado';
-  public animacaoLogin: string = 'criado';
+  public estadoPainel: string = 'criado';
+  public cadastro: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public ativarPainel(event: string): void {
+    this.cadastro = event === 'cadastro' ? true : false;
+  }
+
+  public inicioLogin(): void {
+    console.log('Inicio do carregameno da transicao');
+  }
+
+  public fimLogin(): void {
+    console.log('Fim do carregameno da transicao');
   }
 
 }
