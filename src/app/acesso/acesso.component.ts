@@ -39,7 +39,7 @@ import { trigger, animate, state, transition, style } from '@angular/animations'
 export class AcessoComponent implements OnInit {
 
   public estadoPainel: string = 'criado';
-  public cadastro: boolean = false;
+  public cadastro: boolean = true;
 
   constructor() { }
 
